@@ -1,4 +1,85 @@
-/* -------------------------------------
- * CSS code specific to home page
- * (margin/padding adjustments)
- * ------------------------------------- */
+.wrapper {
+	background-position: cover;
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 26px solid #FDA993;
+}
+.coming-soon-box {
+	background-color: white;
+	img {
+		width: 30em;
+		padding: 10px 0;
+	}
+	h2 {
+		padding: 10px 0;
+		color: #7C7D81;
+		letter-spacing: 3px;
+	}
+	p {
+		padding: 10px 0;
+		color: #7C7D81;
+	}
+	a {
+		color: #7C7D81;
+		text-decoration: none;
+	}
+	a:hover {
+		opacity: 0.6;
+	}
+}
+@media only screen and (max-width:650px){
+	.wrapper {
+		border: 15px solid #FDA993;
+	}
+	.coming-soon-box {
+		img {
+			width: 25em;
+			padding: 5px 0;
+		}
+		h2 {
+			padding: 5px 0;
+			font-size: 30px;
+			letter-spacing: 1px;
+		}
+		p {
+			padding: 5px 0;
+			padding-bottom: 15px;
+		}
+	}
+}
+@media only screen and (max-width:490px){
+	.wrapper {
+	    border: 8px solid #FDA993;
+	}
+	.coming-soon-box {
+		padding: 0;
+		img {
+			width: 20em;
+			padding: 2.5px 0;
+		}
+		h2 {
+			font-size: 25px;
+			padding: 2.5px 0;
+			letter-spacing: 1px;
+		}
+		p {
+			padding: 2.5px 0;
+			padding-bottom: 7px;
+		}
+	}
+}
+@media only screen and (max-width:325px){
+	.coming-soon-box img {
+		width: 15em;
+		padding: 2.5px 0;
+		position: absolute;
+	    top: 52px;
+	    left: 13%;
+	}
+}
+
+
+
